@@ -1,28 +1,17 @@
 /* South African Flag Colors - Professional UX/UI Design */
 body {
-    font-family: 'Poppins', 'Roboto', Arial, sans-serif;
-    background-image: url("images/african adikira.jpeg");
-    background-size: cover;
-    background-position: center;
+    font-family: "Poppins", sans-serif;
+    background: url(images/mudcloth.jpg);
+    back
     font-weight: bold;
     color: white;
     text-align: center;
     padding: 20px;
     min-height: 100vh;
     position: relative;
+    
 }
 
-/* Dark overlay with South African Blue-to-Green gradient */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 20, 137, 0.85) 0%, rgba(0, 122, 77, 0.85) 100%); /* Blue to Green */
-    z-index: 0;
-}
 
 /* Make sure all content is above overlay */
 body > * {
