@@ -200,6 +200,34 @@ button:active {
     color: white;
 }
 
+footer {
+    text-align: center;
+    margin-top: 32px;
+    padding: 24px 20px;
+    
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 2px;
+    transition: all 0.2s ease;
+}
+
+footer a:hover {
+    border-bottom-color: white;
+    color: #fbbf24;
+}
+
 /* Mobile Responsive */
 @media (max-width: 600px) {
     h1 {
