@@ -2,6 +2,9 @@
 
 An interactive blackjack game celebrating African culture through design and storytelling. Built with vanilla JavaScript to demonstrate game logic, state management, and user interaction.
 
+<img width="1872" height="860" alt="Kwetu Blackjack" src="https://github.com/user-attachments/assets/a907a5b5-41cc-4aa3-83e3-a329b54d2a58" />
+
+
 ## 🚀 Live Demo
 
 View Live Demo <https://qwetublackjack.netlify.app/>
