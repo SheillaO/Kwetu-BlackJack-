@@ -1,19 +1,38 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+## 🎴 Kwetu Blackjack - African Card Game
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+An interactive blackjack game celebrating African culture through design and storytelling. Built with vanilla JavaScript to demonstrate game logic, state management, and user interaction.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## 🚀 Live Demo
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+View Live Demo <https://qwetublackjack.netlify.app/>
 
-Happy Coding!
+## 🌍 What is Kwetu?
+
+**Kwetu** means "home" in Swahili. This project brings the classic card game of 21 to an African context, featuring South African flag colors and the ability to "play" across major African cities.
+
+## ✨ Features
+
+- **Classic Blackjack Gameplay**: Get as close to 21 as possible without going over
+- **Betting System**: Place bets ($10, $20, $50, $100) before each game
+- **Win/Loss Tracking**: Real-time statistics tracking wins, losses, and chip count
+- **Streak Counter**: Tracks your best winning streak
+- **Card Counter**: Shows how many cards you've drawn
+- **City Selector**: Play from Nairobi, Lagos, Cape Town, Cairo, Accra, or Dakar
+- **Dynamic Chip Management**: Win bets when you hit 21, lose bets when you bust
+- **Responsive Design**: Works on desktop, tablet, and mobile devices
+
+## 🎨 Design
+
+Built with **South African flag colors** for a vibrant, professional look:
+- **Blue** (#001489) - Background gradient
+- **Green** (#007A4D) - Accents and borders
+- **Red** (#DE3831) - Action buttons
+- **Gold** (#FFB612) - Highlights and important info
+- **Black & White** - High contrast for readability
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3 (Gradients, Flexbox, Transitions)
+- Vanilla JavaScript (ES6)
+- Google Fonts (Poppins)
