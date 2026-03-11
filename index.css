@@ -1,8 +1,9 @@
-/* South African Flag Colors - Professional UX/UI Design */
+/* South African Flag Colors Inspiration*/
 body {
     font-family: "Poppins", sans-serif;
     background: url(images/mudcloth.jpg);
-    back
+    background-size: cover;
+    background-position: center;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -12,21 +13,13 @@ body {
     
 }
 
-
-/* Make sure all content is above overlay */
-body > * {
-    position: relative;
-    z-index: 1;
-}
-
-/* City Selector */
 .city-selector {
     background: rgba(0, 0, 0, 0.8);
     padding: 16px;
     border-radius: 12px;
     margin-bottom: 20px;
     display: inline-block;
-    border: 2px solid #FFB612; /* Gold border - POPS! */
+    border: 2px solid #FFB612; 
 }
 
 .city-selector p {
@@ -34,7 +27,7 @@ body > * {
 }
 
 #city-el {
-    color: #FFB612; /* Gold - POPS! */
+    color: #FFB612; 
     font-size: 20px;
     font-weight: 800;
 }
