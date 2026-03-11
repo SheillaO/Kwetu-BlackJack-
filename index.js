@@ -130,3 +130,20 @@ function changeCity() {
 
   cityEl.textContent = cities[currentCity];
 }
+
+let dealerCards = [];
+let dealerSum = 0;
+
+function dealerTurn() {
+  dealerCards = [getRandomCard(), getRandomCard()];
+  dealerSum = dealerCards[0] + dealerCards[1];
+
+  while (dealerSum < 17) {
+    let newCard = getRandomCard();
+    dealerCards.push(newCard);
+    dealerSum += newCard;
+  }
+
+  let dealerEl = document.getElementById("dealer-el");
+  dealerEl.textContent = "Dealer: " + dealerSum;
+}
