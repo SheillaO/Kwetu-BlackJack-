@@ -28,6 +28,7 @@ function getRandomCard() {
 
 function startGame() {
   isAlive = true;
+  hasBlackJack = false; // RESET THIS!
   let firstCard = getRandomCard();
   let secondCard = getRandomCard();
   cards = [firstCard, secondCard];
@@ -36,29 +37,46 @@ function startGame() {
 }
 
 function renderGame() {
-  cardsEl.textContent = "Cards: ";
+  // Card counter
+  cardsEl.textContent = "Cards (" + cards.length + "): ";
   for (let i = 0; i < cards.length; i++) {
     cardsEl.textContent += cards[i] + " ";
   }
 
   sumEl.textContent = "Sum: " + sum;
+
   if (sum <= 20) {
     message = "Do you want to draw a new card?";
   } else if (sum === 21) {
     message = "You've got Blackjack!";
     hasBlackJack = true;
+
     // WIN! Add bet to chips
     player.chips += bet;
     wins += 1;
+
+    // Update streak
+    currentStreak += 1;
+    if (currentStreak > bestStreak) {
+      bestStreak = currentStreak;
+    }
+    streakEl.textContent = bestStreak;
+
     updateStats();
   } else {
     message = "You're out of the game!";
     isAlive = false;
+
     // LOSS! Subtract bet from chips
     player.chips -= bet;
     losses += 1;
+
+    // Reset streak
+    currentStreak = 0;
+
     updateStats();
   }
+
   messageEl.textContent = message;
 }
 
@@ -81,7 +99,7 @@ function placeBet() {
   betEl.textContent = bet;
 }
 
-//  Win/Loss Tracker
+// Win/Loss Tracker
 let wins = 0;
 let losses = 0;
 let winsEl = document.getElementById("wins-el");
@@ -92,6 +110,11 @@ function updateStats() {
   lossesEl.textContent = losses;
   playerEl.textContent = player.name + ": $" + player.chips;
 }
+
+// Streak Tracker
+let currentStreak = 0;
+let bestStreak = 0;
+let streakEl = document.getElementById("streak-el");
 
 // African Cities Selector
 let cities = ["Nairobi", "Lagos", "Cape Town", "Cairo", "Accra", "Dakar"];
