@@ -71,7 +71,7 @@ function newCard() {
   }
 }
 
-// FEATURE 1: Betting System
+// Betting System
 let bet = 10;
 let betEl = document.getElementById("bet-el");
 
@@ -81,7 +81,7 @@ function placeBet() {
   betEl.textContent = bet;
 }
 
-// FEATURE 2: Win/Loss Tracker
+//  Win/Loss Tracker
 let wins = 0;
 let losses = 0;
 let winsEl = document.getElementById("wins-el");
