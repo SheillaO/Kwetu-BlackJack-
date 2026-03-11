@@ -194,6 +194,12 @@ button:active {
     color: #FFB612; 
 }
 
+.btn-reset {
+    width: 100%;
+    background-color: #007A4D;
+    color: white;
+}
+
 /* Mobile Responsive */
 @media (max-width: 600px) {
     h1 {
