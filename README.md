@@ -197,12 +197,8 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🔗 Related Projects
 
 - [She Hoops Africa](https://github.com/SheillaO/she-hoops-africa) - Basketball scoreboard promoting African women in sports
-- [Recipe Calculator](https://github.com/SheillaO/recipe-calculator) - Ingredient scaling tool
+- [Recipe Calculator](https://github.com/SheillaO/Recipe-Ingredient-Calculator) - Ingredient scaling tool
 
 ---
-
-⭐ **Star this project if you enjoyed it!**
-
-🌍 **Share it to celebrate African culture in tech!**
 
 🎴 **#KwetuBlackjack #AfricanTech #RepresentationMatters**
