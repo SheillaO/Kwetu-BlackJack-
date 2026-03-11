@@ -191,7 +191,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🙏 Acknowledgments
 
 - South African flag colors for the beautiful, vibrant palette
-- African adinkra symbols for cultural design inspiration
 - The JavaScript community for learning resources
 - African developers and creators paving the way
 
