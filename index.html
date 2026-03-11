@@ -1,15 +1,44 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1>Blackjack</h1>
-        <p id="message-el">Want to play a round?</p>
-        <p id="cards-el">Cards:</p>
-        <p id="sum-el">Sum:</p>
-        <button onclick="startGame()">START GAME</button>
-        <button onclick="newCard()">NEW CARD</button>
-        <p id="player-el"></p>
-        <script src="index.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kwetu Blackjack - African Card Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="city-selector">
+        <p>🌍 Playing from: <span id="city-el">Nairobi</span></p>
+        <button onclick="changeCity()" class="city-btn">CHANGE CITY</button>
+    </div>
+
+    <h1>Kwetu Blackjack</h1>
+    <p class="tagline">Play 21 the African Way</p>
+
+    <p id="message-el">Want to play a round?</p>
+    <p id="cards-el">Cards:</p>
+    <p id="sum-el">Sum:</p>
+
+    <button onclick="placeBet()">PLACE BET</button>
+    <button onclick="startGame()">START GAME</button>
+    <button onclick="newCard()">NEW CARD</button>
+
+    <p id="player-el"></p>
+
+    <div class="stats">
+        <p>Current Bet: $<span id="bet-el" class="stat-number">10</span></p>
+        <p>Wins: <span id="wins-el" class="stat-number">0</span> | Losses: <span id="losses-el"
+                class="stat-number">0</span></p>
+    </div>
+
+    <div class="info-box">
+        <p><strong>Kwetu</strong> means "home" in Swahili. Play blackjack across African cities!</p>
+        <p>🎴 Goal: Get as close to 21 without going over</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
