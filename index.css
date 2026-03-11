@@ -1,29 +1,234 @@
+/* South African Flag Colors - Professional UX/UI Design */
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
-    background-image: url("images/table.png");
+    font-family: 'Poppins', 'Roboto', Arial, sans-serif;
+    background-image: url("images/african adikira.jpeg");
     background-size: cover;
+    background-position: center;
     font-weight: bold;
     color: white;
     text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
 }
 
+/* Dark overlay with South African Blue-to-Green gradient */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 20, 137, 0.85) 0%, rgba(0, 122, 77, 0.85) 100%); /* Blue to Green */
+    z-index: 0;
+}
+
+/* Make sure all content is above overlay */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* City Selector */
+.city-selector {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 2px solid #FFB612; /* Gold border - POPS! */
+}
+
+.city-selector p {
+    margin: 0;
+}
+
+#city-el {
+    color: #FFB612; /* Gold - POPS! */
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.city-btn {
+    background: #007A4D; /* Green */
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-left: 12px;
+    border: 2px solid #FFB612; /* Gold border */
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.city-btn:hover {
+    background: #FFB612; /* Gold */
+    color: #000000;
+    border-color: #007A4D;
+}
+
+/* Title */
 h1 {
-    color: goldenrod;
+    color: #FFB612; /* Gold - POPS! */
+    font-size: 72px;
+    margin-bottom: 8px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+    letter-spacing: 2px;
 }
 
+.tagline {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 32px;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Game Info */
 #message-el {
     font-style: italic;
+    font-size: 26px;
+    margin: 20px 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+#cards-el {
+    font-size: 36px;
+    margin: 16px 0;
+    background: white; /* WHITE - POPS! */
+    color: #001489; /* Blue text */
+    padding: 20px;
+    border-radius: 12px;
+    display: inline-block;
+    min-width: 350px;
+    border: 4px solid #FFB612; /* Gold border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    font-weight: 800;
+}
+
+#sum-el {
+    font-size: 40px;
+    margin: 16px 0;
+    color: #000000; /* Black text */
+    background: #FFB612; /* GOLD background - POPS! */
+    padding: 16px 32px;
+    border-radius: 12px;
+    display: inline-block;
+    font-weight: 800;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Buttons */
 button {
-    color: #016f32;
-    width: 150px;
-    background: goldenrod;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    border: none;
-    border-radius: 2px;
-    margin-bottom: 2px;
-    margin-top: 2px;
+    color: white;
+    width: 200px;
+    background: #DE3831; /* RED - POPS! */
+    padding: 14px 28px;
+    font-weight: 700;
+    border: 3px solid #FFB612; /* Gold border */
+    border-radius: 10px;
+    margin: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #FFB612; /* Gold */
+    color: #000000;
+    border-color: #DE3831; /* Red border */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Player Info */
+#player-el {
+    font-size: 22px;
+    margin-top: 24px;
+    color: #000000; /* Black */
+    background: white; /* WHITE - POPS! */
+    padding: 16px 24px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 700;
+    border: 3px solid #007A4D; /* Green border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Stats Box */
+.stats {
+    background: white; /* WHITE - POPS! */
+    color: #001489; /* Blue text */
+    max-width: 500px;
+    margin: 24px auto;
+    padding: 24px;
+    border-radius: 16px;
+    border: 4px solid #DE3831; /* Red border - POPS! */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.stats p {
+    font-size: 20px;
+    margin: 12px 0;
+    color: #001489; /* Blue */
+    font-weight: 600;
+}
+
+.stat-number {
+    color: #DE3831; /* RED - POPS! */
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* Info Box */
+.info-box {
+    background: rgba(0, 20, 137, 0.9); /* Blue with transparency */
+    max-width: 600px;
+    margin: 40px auto 0;
+    padding: 28px;
+    border-radius: 16px;
+    border: 3px solid #FFB612; /* Gold border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.info-box p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 12px 0;
+    color: white;
+}
+
+.info-box strong {
+    color: #FFB612; /* Gold */
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 48px;
+    }
+    
+    button {
+        width: 160px;
+        font-size: 14px;
+    }
+    
+    #cards-el {
+        min-width: 280px;
+        font-size: 30px;
+    }
+    
+    #sum-el {
+        font-size: 32px;
+    }
 }
