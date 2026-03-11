@@ -147,3 +147,21 @@ function dealerTurn() {
   let dealerEl = document.getElementById("dealer-el");
   dealerEl.textContent = "Dealer: " + dealerSum;
 }
+
+// When game ends, save stats
+function saveStats() {
+    localStorage.setItem("wins", wins)
+    localStorage.setItem("losses", losses)
+    localStorage.setItem("chips", player.chips)
+}
+
+// When page loads, restore stats
+function loadStats() {
+    wins = Number(localStorage.getItem("wins")) || 0
+    losses = Number(localStorage.getItem("losses")) || 0
+    player.chips = Number(localStorage.getItem("chips")) || 200
+    updateStats()
+}
+
+// Call on page load
+loadStats()
